@@ -1,0 +1,10 @@
+Sauce: a POSIX compliant shell script for updating and building packages.
+
+About:
+This script goes through a given directory of source builds (by default ~/.local/src), pulls any updates from git, and then runs make and sudo make clean install. Whenever sudo make clean install isn't available, 
+it simply runs sudo cp (application_name) /usr/bin/  
+
+Dependencies:
+- GNU Make
+- POSIX compliant shell (bash, zsh, etc.)
+- git
